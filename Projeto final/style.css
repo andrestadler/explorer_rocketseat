@@ -1,0 +1,100 @@
+body {
+  background-color: #2C2B3D;
+  margin:0;
+  font-family: 'JetBrains Mono' monospace;
+  min-height: 100%;
+  padding: 20px;
+}
+
+.page {
+  width: 1083px;
+  margin: 0 auto 157px; 
+}
+div, footer { 
+  font-family:'JetBrains Mono';
+  font-size: 14px;
+}
+
+nav { 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 101px;
+
+}
+
+ul { 
+  display: flex;
+  text-decoration: none;
+  gap: 64px;
+  list-style: none;
+  color: white;
+}
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section {
+  display: block;
+}
+
+h1 {
+  font-family: 'JetBrains Mono' monospace;
+  text-align: center;
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+h1 span {
+  color: #00BFA6;
+}
+
+p {
+  font-family: 'Open Sans';
+  font-size: 16px;
+  text-align: center;
+  color: #C2C2C2;
+}
+
+p span {
+  color: #00BFA6;
+  font-weight: bold;
+}
+
+footer { 
+ 
+  display: flex;
+  width: 462px;
+  left: 397px;
+  width: 100%;
+  color: white;
+  
+}
+.line {
+  width: 568px;
+  height: 0px;
+  border: 1px solid #00BFA6;
+  margin: auto;
+}
+
+
+
+
+footer p, a { 
+  text-decoration: none;
+  margin: 27px auto 23px;
+  align-items: center;
+  font-family: 'JetBrains Mono';
+  font-size: 14px;
+  color: white;
+
+}
+
+#cadeado {
+  margin-bottom: 0;
+  margin-left: 0;
+  position: fixed;
+}
