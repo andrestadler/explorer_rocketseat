@@ -1,62 +1,121 @@
-<!-- Instrução que define o tipo do documento. -->
 <!DOCTYPE html>
-<html lang="pt-br">
-  <!-- Tag <head> contém as instruções para a página -->
-  <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Móveis customizados</title>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mentoria</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 
-    <link rel="stylesheet" href="style.css" />
-  </head>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>MENTORIA</h1>
+      <p>Preencha o formulário abaixo para </br> 
+        agendar a sua mentoria</p>
+    </header>
 
-  <!-- Tag <body> é o corpo do documento, onde tem as informações que serão mostradas. -->
-  <body>
-    <div id="hero">
-      <img
-        src="images/image 1.jpg"
-        alt="Desenho de uma pessoa vestindo uma camisa amarela em uma sala com Móveis"
-      />
-      
+    <form id="my-form">
 
-      <h1>
-        Ambientes <span>únicos</span> para você!
-      </h1>
+      <fieldset>
+        <div class="fieldset-wrapper">
+          <legend>Informações pessoais</legend>
 
-      <p>
-        Nós criamos ambientes <strong>exclusivos</strong> e <strong>únicos</strong>, com muito bom gosto e profissionalismo, investimos tempo e
-        <span>dedicação no seu projeto</span>.
+            <div class="col-2">
 
-        <br />
-        <br />
+              <div class="input-wrapper">
+                <label for="name">Nome</label>
+                <input type="text" id="name">
+              </div>
 
-        Tenha <span>ambientes limpos</span> e bem decorados, transmitindo
-        <strong>elegância e finesse</strong>
-        para todo aquele que estiver ali.
-      </p>
-    </div>
-    
-    <div class="line"></div>
+              <div class="input-wrapper">
+                <label for="surname">Sobrenome</label>
+                <input type="text" id="surname">
+              </div>
+            </div>
 
-    <div id="footer">
-      <a target="_blank" href="https://instagram.com/moveisparavoce"
-        >Instagram</a
-      >
-      <a href="mailto:contato@moveisparavoce.com">Fale conosco</a>
-    </div>
+            <div class="input-wrapper">
+              <label for="email">Email <span>(digite um email válido)</span> </label>
+              <input type="email" id="email">
+            </div>  
 
-     <img
-      id="balls"
-      src="images/balls.svg"
-      alt="Bolinhas alaranjadas no canto inferior direito da tela"
-    />
+            <div class="input-wrapper">
+            <label for="password">Senha <span>(mínimo de 6 caracteres)</span></label>
+            <input type="password" id="password" required minlength="6">
+            </div>
 
-  </body>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <div class="fieldset-wrapper">
+          <legend>Informações do mentor</legend>
+            <div class="input-wrapper">
+              <label for="mentor">Nome do seu mentor <span>(só o primeiro nome)</span></label>
+              <input type="text" id="mentor">
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <div class="fieldset-wrapper">
+          <legend>Seus horários disponíveis</legend>
+
+          <div class="schedule-wrapper">
+            <legend>PRIMEIRA MENTORIA</legend>
+            <div class="col-3">
+              <div class="input-wrapper">
+                <label for="event-date">Data</label>
+                <input type="date" id="event-date">
+              </div>
+  
+              <div class="input-wrapper">
+                <label for="event-begin">Das</label>
+                <input type="time" id="event-begin">
+              </div>
+  
+              <div class="input-wrapper">
+                <label for="event-end">Até</label>
+                <input type="time" id="event-end">
+              </div>
+            </div>
+          </div>
+
+          <div class="schedule-wrapper">
+            <legend>SEGUNDA MENTORIA</legend>
+            <div class="col-3">
+              <div class="input-wrapper">
+                <label for="event-date">Data</label>
+                <input type="date" id="event-date">
+              </div>
+  
+              <div class="input-wrapper">
+                <label for="event-begin">Das</label>
+                <input type="time" id="event-begin">
+              </div>
+  
+              <div class="input-wrapper">
+                <label for="event-end">Até</label>
+                <input type="time" id="event-end">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </fieldset>
+
+    </form>
+ 
+<footer>
+  <button class="button"
+  form="my-form">SALVAR</button>
+</footer>
+  
+
+</body>
 </html>
